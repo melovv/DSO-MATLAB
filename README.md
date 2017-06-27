@@ -124,6 +124,7 @@ A BibTeX entry for LaTeX users is:
 
 Vinícius Veloso de Melo (Institute of Science and Technology - Federal University of São Paulo)
 
+Contact: dr.vmelo@gmail.com, vinicius.melo@unifesp.br
 
 
 
