@@ -26,6 +26,7 @@ landscape to explore, and the command center that processes the retrieved
 data and updates the drones' firmware whenever necessary. 
 
 ![Images from the Internet](command_center.jpg)
+[Images from the Internet]
 
 ## Perturbations
 
