@@ -1,13 +1,25 @@
 # DSO-MATLAB
 
-Drone Squadron Optimization is a new self-adaptive
-metaheuristic for global numerical optimization which is updated online
-by a hyper-heuristic. It is the first meta-heuristic that can improve 
-its own code during the optimization process.
+Drones, like submarines or the well-known
+flying machines, such as balloons, airplanes, helicopters, quadcopters,
+can navigate autonomously or remotely. They have sensors, can communicate
+over vast distances, can use solar power, and - one of the most
+important features - can be upgraded or improved not only concerning hardware
+but also by changing their software~(the firmware). Therefore, since
+these machines have software~(firmware) to control
+their behavior, researchers are free to add mechanisms to the algorithm
+as simple software upgrades. 
 
-DSO is an artifact-inspired technique, as opposed
+Drone Squadron Optimization (DSO) is an artifact-inspired technique, as opposed
 to many nature-inspired algorithms used today. DSO is
 very flexible because it is not related to natural behaviors or  phenomena.
+Changing its formulation doesn't make it a 'novel nature-inspired algorithm'.
+Therefore, although you change DSO's components, it is still DSO.
+
+DSO is a novel self-adaptive
+metaheuristic for global numerical optimization which is updated online (at running time)
+by a hyper-heuristic. AFAIK, it is the first meta-heuristic that can improve 
+its own code during the optimization process.
 
 DSO has two core parts: the semi-autonomous drones that fly over a
 landscape to explore, and the command center that processes the retrieved
@@ -32,7 +44,7 @@ many nature-inspired meta-heuristics. Moreover, it can automatically improve the
 
 Because of its automatic adaptation, DSO can do the following:
 
-### Escape from local-optima
+### Escape from local-optima (poor-quality regions)
 
 ![Example of escaping](escaping.jpg)
 
@@ -40,19 +52,13 @@ Because of its automatic adaptation, DSO can do the following:
 
 ![Example of stagnation recovery](stagnation.jpg)
 
-### Detect convergence (lack of population diversity) and restart to continuing exploring (ConvThres)
+### Detect convergence (lack of population diversity) and restart to continue exploring (ConvThres)
 
 ![Example of restart](restart.jpg)
 
 ### Discover perturbations that intensify the seach
 
 ![Examples of intensification](intensification.jpg)
-
-We evaluated DSO on
-a set of widely employed single-objective benchmark functions. The
-statistical analysis of the results shows that the proposed method
-is competitive with the other methods, but we plan
-several future improvements to make it more powerful and robust.
 
 
 ## Hyper-heuristic configuration
@@ -64,14 +70,48 @@ Please, check file DSO/InitGPConfig.m
 We provide a Matlab (R) toolbox for testing purposes. It has controls for several
 parameters, while the others must be changed in the source code.
 
+Also, you can zoom and pan the map using the top left controls.
+
 ![Toolbox](Toolbox.jpg)
 
-`Please cite:`
-de Melo, V.V. & Banzhaf, W. Neural Comput & Applic (2017). doi:10.1007/s00521-017-2881-3
 
-`https://link.springer.com/article/10.1007/s00521-017-2881-3`
+## Minimum requirements
+
+1. `Octave 3.8` or
+2. `Matlab (R) 2011`
+
+AFAIK, the Toolbox works only in Matlab.
+
+## License
+
+This project is licensed under GNU GPL v3.
+
+## Citation
+
+To cite DSO in publications use
+
+    de Melo, V.V. & Banzhaf, W. Neural Comput & Applic (2017). doi:10.1007/s00521-017-2881-3
+    https://link.springer.com/article/10.1007/s00521-017-2881-3
+
+A BibTeX entry for LaTeX users is
+
+.. code-block:: none
+
+	@Article{deMelo2017,
+	author="de Melo, Vin{\'i}cius Veloso
+	and Banzhaf, Wolfgang",
+	title="Drone Squadron Optimization: a novel self-adaptive algorithm for global numerical optimization",
+	journal="Neural Computing and Applications",
+	year="2017",
+	issn="1433-3058",
+	doi="10.1007/s00521-017-2881-3",
+	url="http://dx.doi.org/10.1007/s00521-017-2881-3"
+	}
 
 
+## Author
+
+Vinícius Veloso de Melo (Institute of Science and Technology - Federal University of Sao Paulo)
 
 
 
