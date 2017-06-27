@@ -5,8 +5,8 @@ flying machines, such as balloons, airplanes, helicopters, quadcopters,
 can navigate autonomously or remotely. They have sensors, can communicate
 over vast distances, can use solar power, and - one of the most
 important features - can be upgraded or improved not only concerning hardware
-but also by changing their software~(the firmware). Therefore, since
-these machines have software~(firmware) to control
+but also by changing their software (the firmware). Therefore, since
+these machines have software (firmware) to control
 their behavior, researchers are free to add mechanisms to the algorithm
 as simple software upgrades. 
 
@@ -60,7 +60,6 @@ Because of its automatic adaptation, DSO can do the following:
 
 ![Examples of intensification](intensification.jpg)
 
-
 ## Hyper-heuristic configuration
 
 Please, check file DSO/InitGPConfig.m
@@ -88,14 +87,12 @@ This project is licensed under GNU GPL v3.
 
 ## Citation
 
-To cite DSO in publications use
+To cite DSO in publications use:
 
     de Melo, V.V. & Banzhaf, W. Neural Comput & Applic (2017). doi:10.1007/s00521-017-2881-3
     https://link.springer.com/article/10.1007/s00521-017-2881-3
 
-A BibTeX entry for LaTeX users is
-
-.. code-block:: none
+A BibTeX entry for LaTeX users is:
 
 	@Article{deMelo2017,
 	author="de Melo, Vin{\'i}cius Veloso
@@ -108,10 +105,9 @@ A BibTeX entry for LaTeX users is
 	url="http://dx.doi.org/10.1007/s00521-017-2881-3"
 	}
 
-
 ## Author
 
-Vinícius Veloso de Melo (Institute of Science and Technology - Federal University of Sao Paulo)
+Vinícius Veloso de Melo (Institute of Science and Technology - Federal University of São Paulo)
 
 
 
