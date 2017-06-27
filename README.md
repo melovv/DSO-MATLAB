@@ -60,10 +60,6 @@ Because of its automatic adaptation, DSO can do the following:
 
 ![Examples of intensification](intensification.jpg)
 
-## Hyper-heuristic configuration
-
-Please, check file DSO/InitGPConfig.m
-
 ## Toolbox
 
 We provide a Matlab (R) toolbox for testing purposes. It has controls for several
@@ -74,12 +70,30 @@ Also, you can zoom and pan the image using the top left controls.
 ![Toolbox](Toolbox.jpg)
 
 
-## Minimum requirements
+## Running
+
+### Minimum requirements
 
 1. `Octave 3.8` or
 2. `Matlab (R) 2011`
 
 AFAIK, the Toolbox works only in Matlab.
+
+### Main code
+
+Please, check DSO/main.m
+
+### Hyper-heuristic configuration
+
+Please, check file DSO/InitGPConfig.m
+
+### Objective function
+
+Please, check file DSO/CostFunction.m
+
+### Toolbox code
+
+Please, check DSO/DSOToolbox.m
 
 ## License
 
