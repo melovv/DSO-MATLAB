@@ -52,7 +52,7 @@ setup.MaxStagnation = 10;  % The maximum iterations without improvement to consi
 setup.Pacc = 0.1;           % The probability of accepting a worse solution when search stagnates
 setup.ConvThres = 1e-15;     % Threshold to restart if there is a population convergence according to the objective function values
 
-setup.VTR = -1;          % value-to-reach
+setup.VTR = 1e-20;          % value-to-reach
 setup.ReportLag = 10;       % report at every 10 iterations
 setup.MaxEvaluations = 50000;  % stopping criterion
 setup.MaxIterations = floor(setup.MaxEvaluations / (setup.N * setup.N_Teams)); % maximum number of iterations. This does not consider the possible restarts

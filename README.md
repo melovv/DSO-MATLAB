@@ -15,6 +15,8 @@ data and updates the drones' firmware whenever necessary.
 
 ![Images from the Internet](command_center.jpg)
 
+## Perturbations
+
 The self-adaptive
 aspect of DSO in this work is the perturbation/movement scheme, which
 is the procedure used to generate target coordinates. This procedure
@@ -23,15 +25,22 @@ in order to adapt DSO to the search landscape.
 
 ![Examples of perturbations](perturbations.jpg)
 
+As one may wonder, DSO can automatically generate formulas that are exactly the same of 
+many nature-inspired meta-heuristics. Moreover, it can automatically improve them!
+
 ## Capabilities
 
-Because of such automatic adaptation, DSO can do the following:
+Because of its automatic adaptation, DSO can do the following:
 
-### Detect stagnation and explore different regions of the search-space
+### Escape from local-optima
+
+![Example of escaping](escaping.jpg)
+
+### Detect stagnation and explore other regions of the search-space (MaxStagnation and Pacc)
 
 ![Example of stagnation recovery](stagnation.jpg)
 
-### Detect convergence (lack of population diversity) and restart to continuing exploring
+### Detect convergence (lack of population diversity) and restart to continuing exploring (ConvThres)
 
 ![Example of restart](restart.jpg)
 
@@ -52,11 +61,10 @@ Please, check file DSO/InitGPConfig.m
 
 ## Toolbox
 
-We provide a Matlab (R) toolbox for testing purposes. It has controls for the most
+We provide a Matlab (R) toolbox for testing purposes. It has controls for several
 parameters, while the others must be changed in the source code.
 
 ![Toolbox](Toolbox.jpg)
-
 
 `Please cite:`
 de Melo, V.V. & Banzhaf, W. Neural Comput & Applic (2017). doi:10.1007/s00521-017-2881-3
