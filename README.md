@@ -69,7 +69,7 @@ Please, check file DSO/InitGPConfig.m
 We provide a Matlab (R) toolbox for testing purposes. It has controls for several
 parameters, while the others must be changed in the source code.
 
-Also, you can zoom and pan the map using the top left controls.
+Also, you can zoom and pan the image using the top left controls.
 
 ![Toolbox](Toolbox.jpg)
 
