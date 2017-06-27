@@ -37,7 +37,7 @@ Because of such automatic adaptation, DSO can do the following:
 
 ### Discover perturbations that intensify the seach
 
-![Examples of perturbations](perturbations.jpg)
+![Examples of intensification](intensification.jpg)
 
 We evaluated DSO on
 a set of widely employed single-objective benchmark functions. The
