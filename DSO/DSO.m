@@ -300,11 +300,11 @@ function [X,Fx, StatsCurvesOFV, NFE, StopMessage, HistoryRanks, Firmwares, Local
 
                 if (opBounds == 1)
                     for i = 1:Nvars
-                        indexes = New_Team_Position(:,i) < LB(i).*ones(N,1);
+                        indexes = find(New_Team_Position(:,i) < LB(i));
                         
                         violations(team) = violations(team) + abs(sum(LB(i)-New_Team_Position(indexes,i)));
                         New_Team_Position(indexes,i) = LB(i);
-                        indexes = New_Team_Position(:,i) > UB(i).*ones(N,1);
+                        indexes = find(New_Team_Position(:,i) > UB(i));
                         
                         violations(team) = violations(team) + abs(sum(New_Team_Position(indexes,i)-UB(i)));
                         New_Team_Position(indexes,i) = UB(i);
@@ -323,11 +323,11 @@ function [X,Fx, StatsCurvesOFV, NFE, StopMessage, HistoryRanks, Firmwares, Local
                     for i = 1:Nvars
                         indexes = find(New_Team_Position(:,i) < LB(i));
                         violations(team) = violations(team) + abs(sum(LB(i)-New_Team_Position(indexes,i)));
-                        New_Team_Position(indexes,i) = LB(i) + abs(rem(New_Team_Position(indexes,i), matInterval(i)));
+                        New_Team_Position(indexes,i) = LB(i) + abs(rem(New_Team_Position(indexes,i), matInterval(indexes, i)));
 
                         indexes = find(New_Team_Position(:,i) > UB(i));
                         violations(team) = violations(team) + abs(sum(New_Team_Position(indexes,i)-UB(i)));
-                        New_Team_Position(indexes,i) = UB(i) - abs(rem(New_Team_Position(indexes,i), matInterval(i)));
+                        New_Team_Position(indexes,i) = UB(i) - abs(rem(New_Team_Position(indexes,i), matInterval(indexes, i)));
 
                     end
                 else
